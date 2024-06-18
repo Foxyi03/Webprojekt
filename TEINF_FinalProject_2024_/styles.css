@@ -96,7 +96,7 @@ footer {
 
 article.example {
   border: solid #f2f2f2 1px;
-  width: fit-content;
+  width: 200px;
   height: fit-content;
   padding: 10px;
   background-color: rgba(95, 95, 95, 10%);
