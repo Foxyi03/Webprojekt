@@ -36,6 +36,10 @@ nav ul li a {
   color: #333;
 }
 
+.active a {
+  color: lightgray;
+}
+
 /* Inhaltscontainer */
 .container {
   max-width: 800px;
