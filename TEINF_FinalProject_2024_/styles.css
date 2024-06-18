@@ -9,15 +9,16 @@ body {
 
 /* Kopfzeile */
 header {
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
   padding: 20px;
   text-align: center;
 }
 
 h1#logo {
-  color: #333;
+  color: #333; 
   font-size: 24px;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 nav ul {
