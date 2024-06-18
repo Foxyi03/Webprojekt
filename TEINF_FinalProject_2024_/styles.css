@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 .active a {
-  color: lightgray;
+  color: rgb(253, 0, 0);
   writing-mode: vertical-rl
 }
 
@@ -125,7 +125,8 @@ article.example p {
 
 .about-container {
   text-align: center;
-  background-color: #333;
+  /*background-color: #333;*/
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
   border-radius: 20px;
   padding: 0px;
 }
