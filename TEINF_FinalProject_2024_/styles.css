@@ -112,3 +112,16 @@ article.example p {
   display: inline-grid;
   grid-template-columns: auto auto auto;
 }
+
+/* About us */
+
+.about-container {
+  text-align: center;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 0px;
+}
+
+.about-container h2 {
+  font-size: 100px;
+}
