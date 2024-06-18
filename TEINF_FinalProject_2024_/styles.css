@@ -130,3 +130,12 @@ article.example p {
 .about-container h2 {
   font-size: 100px;
 }
+
+/*Message Box - PHP*/
+
+.message-container{
+  font-size: 25px;
+  background-color: aqua;
+  width: 0 auto;
+  border-radius: 25px;
+}

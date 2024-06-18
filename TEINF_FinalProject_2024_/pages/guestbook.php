@@ -8,12 +8,12 @@
   <header>
     <h1 id="logo">Guestbook</h1>
     <nav>
-      <ul>
+    <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="monuments.html">Monuments</a></li>
+        <li ><a href="about.html">About Us</a></li>
         <li class="active"><a href="guestbook.php">Guestbook</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -83,17 +83,16 @@
     $result = $conn->query($sql);
 
         //var_dump($result);
-
-
+    echo "<div class='message-container'>";
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-          echo "<p>ID: " . $row["id"]. " - Name: " . $row["name"]. " - Message: " . $row["message"]. "<p>";
+          echo "<p> Name: " . $row["name"]. " <br> Message: " . $row["message"]. "<p>";
         }
       } else {
         echo "0 results";
       }
-      
+      echo "</div>";
     $conn->close();
 
 ?>
