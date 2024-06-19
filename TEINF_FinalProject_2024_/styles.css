@@ -41,7 +41,7 @@ nav ul li a {
 
 .active a {
   color: rgb(253, 0, 0);
-  writing-mode: vertical-rl
+  writing-mode: vertical-rl;
 }
 
 /* Inhaltscontainer */
@@ -49,6 +49,11 @@ nav ul li a {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+
+  /*background-image: url('images/pedro.gif');
+  background-position: center;
+  background-size: cover;
+  overflow: auto; */
 }
 
 h2 {
