@@ -24,10 +24,10 @@
     <!-- Create guestbook entry -->
     <form action="guestbook.php" method="POST">
       Name: <br>
-      <input type="Text" name="name" placeholder="Max 64 chars">
+      <input type="Text" name="name" placeholder="Max 64 chars" required>
       <br>
       Message: <br>
-      <textarea name="message"></textarea>
+      <textarea name="message" required></textarea>
       <br>
       <input type="Submit" value="Submit">
     </form>
