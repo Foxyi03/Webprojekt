@@ -1,4 +1,6 @@
-
+:root {
+  --main-bg-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
+}
 
 /* Allgemeine Stile */
 body {
@@ -10,8 +12,7 @@ body {
 /* Kopfzeile */
 header {
   /*background-color: #f2f2f2;*/
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
+  background: var(--main-bg-color);
   padding: 20px;
   text-align: center;
 }
@@ -88,8 +89,7 @@ p {
 
 /* Fußzeile */
 footer {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
+  background: var(--main-bg-color);
   padding: 10px;
   text-align: center;
 }
@@ -137,9 +137,16 @@ article.example p {
 
 /*Message Box - PHP*/
 
-.message-container{
+.message-box {
   font-size: 25px;
-  background-color: aqua;
-  width: 0 auto;
-  border-radius: 25px;
+  padding: 3px;
+  margin: 5px;
+  width: fit-content;
+  height: fit-content;
+  background: var(--main-bg-color);
+  border-radius: 10px;
+}
+
+.message-box p {
+  margin: 2px;
 }
