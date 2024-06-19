@@ -49,10 +49,10 @@ nav ul li a {
   margin: 0 auto;
   padding: 20px;
 
-  background-image: url('images/pedro.gif');
+  /*background-image: url('images/pedro.gif');
   background-position: center;
   background-size: cover;
-  overflow: auto;
+  overflow: auto; */
 }
 
 h2 {
