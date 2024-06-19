@@ -40,7 +40,7 @@ nav ul li a {
 
 .active a {
   color: rgb(253, 0, 0);
-  writing-mode: vertical-rl
+  writing-mode: horizontal-tb;
 }
 
 /* Inhaltscontainer */
@@ -125,14 +125,12 @@ article.example p {
 
 .about-container {
   text-align: center;
-  /*background-color: #333;*/
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
+  background: rgb(189, 165, 165);
+  /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);*/
   border-radius: 20px;
-  padding: 0px;
-}
-
-.about-container h2 {
-  font-size: 100px;
+  padding: 5px;
+  margin: 10px;
+  max-width: 1000px;
 }
 
 /*Message Box - PHP*/
