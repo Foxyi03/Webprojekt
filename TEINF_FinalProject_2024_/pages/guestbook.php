@@ -24,15 +24,15 @@
     <!-- Create guestbook entry -->
     <form action="guestbook.php" method="POST">
       Name: <br>
-      <input type="Text" name="name" placeholder="Max 64 chars">
+      <input type="Text" name="name" placeholder="Max 64 chars" required>
       <br>
       Message: <br>
-      <textarea name="message"></textarea>
+      <textarea name="message" required></textarea>
       <br>
       <input type="Submit" value="Submit">
     </form>
 
-    <div class="message-container">
+    <form class="message-container" action="guestbook.php" method="POST">
       <h3>Messages: </h3>
       <?php
           session_start();
@@ -64,13 +64,32 @@
               if(!isset($_SESSION["code"]) || $_SESSION["code"] !== $code){
                 $_SESSION["code"] = $code;
                 
-                $sql = "INSERT INTO " . $tableName . " (id, name, message) VALUES (null, '$name', '$message')";
-            
-                if ($conn->query($sql) === TRUE) {
+                $insertSQL = "INSERT INTO " . $tableName . " (id, name, message) VALUES (null, '$name', '$message')";
+                $result = $conn->query($insertSQL);
+
+                /*if ($result === TRUE) {
                   echo " <br> New record created successfully<p>";
                 } else {
                   echo " <br> Error: " . $sql . "<br>" . $conn->error;
-                }
+                }*/
+              }
+            }
+
+            /*
+              Deleting message
+            */
+            if(isset($_POST["deleteMessage"])) {
+              $deleteID = $_POST["deleteMessage"];
+              if(!isset($_SESSION["deleteMessage"]) || $_SESSION["deleteMessage"] !== $deleteID) {
+                $_SESSION["deleteMessage"] = $deleteID;
+                $deleteSQL = "DELETE FROM " . $tableName . " WHERE id=" . $deleteID;
+                $result = $conn->query($deleteSQL);
+
+                /*if ($result === TRUE) {
+                  echo "Record deleted successfully";
+                } else {
+                  echo "Error deleting record: " . $conn->error;
+                }*/
               }
             }
 
@@ -87,7 +106,7 @@
             if ($result->num_rows > 0) {
               // output data of each row
               while($row = $result->fetch_assoc()) {
-                printMessage("<p>" . $row["name"]. ": " . $row["message"]. "</p>");
+                printMessage("<p><button name='deleteMessage' value='" . $row["id"] . "'>X</button>" . $row["name"] . ": " . $row["message"] . "</p>");
               }
             } else {
               printMessage("No messages found!");
@@ -97,7 +116,7 @@
           }
 
       ?>
-    </div>
+    </form>
   </div>
 
   <footer>
