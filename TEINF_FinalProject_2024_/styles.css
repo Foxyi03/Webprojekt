@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 .active a {
-  color: rgb(253, 0, 0);
+  color: rgba(0, 0, 0, 0.3);
   writing-mode: horizontal-tb;
 }
 
@@ -49,11 +49,6 @@ nav ul li a {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-
-  /*background-image: url('images/pedro.gif');
-  background-position: center;
-  background-size: cover;
-  overflow: auto; */
 }
 
 h2 {
@@ -63,6 +58,14 @@ h2 {
 
 p {
   margin-bottom: 10px;
+}
+
+/*Index Seit*/
+.index-container{
+  background-image: url('images/img_background.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow: auto; 
 }
 
 /* Produktliste */
