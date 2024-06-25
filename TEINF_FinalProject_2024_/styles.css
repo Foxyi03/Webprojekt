@@ -65,21 +65,19 @@ p {
 }
 
 /*Index Seit*/
-.index-container{
+#index-body{
   background-image: url('images/img_background.jpg');
-  background-position: center;
-  background-size: 100% 100%;
-  overflow: auto;
-  height: 1145px;
+  background-size: cover;
 }
 
-.index-container h2{
+.index-container-h2{
   text-align: center;
   font-size: 100px;
-  padding: 370px 0;
-  padding-bottom: 50px;
   color: var(--main-text-color);
+  background-color: #000000;
+  max-width: 1100px;
   text-shadow: 4px 4px #000000;
+  margin-top: 20%;
 }
 
 .index-vM{
@@ -87,7 +85,6 @@ p {
   font-size: 50px;
   color: var(--main-text-color);
   max-width: 300px;
-  margin: 0 auto;
   background-color: var(--main-div-color);
   border-radius: 6px;
 }
@@ -98,7 +95,9 @@ p {
   color: var(--main-text-color);
   background-color: var(--main-div-color);
   max-width: 1700px;
-  margin: 0 auto;
+  border-radius: 6px;
+  margin-top: 600px;
+  margin-bottom: 100px;
 }
 
 /* Produktliste */
