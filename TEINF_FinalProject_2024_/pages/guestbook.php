@@ -23,12 +23,12 @@
     
     <!-- Create guestbook entry -->
     <form action="guestbook.php" method="POST">
-      Name: <br>
-      <input type="Text" name="name" placeholder="Max 64 chars" required>
-      <br>
-      Message: <br>
-      <textarea name="message" required></textarea>
-      <br>
+      Name:
+      <input class="messageInput" type="Text" name="name" placeholder="Max 64 chars" required>
+      <br><br>
+      Message:
+      <textarea id="messageTextArea" class="messageInput" name="message" placeholder="Type your message in here..." required></textarea>
+      <br><br>
       <input type="Submit" value="Submit">
     </form>
 
@@ -106,7 +106,7 @@
             if ($result->num_rows > 0) {
               // output data of each row
               while($row = $result->fetch_assoc()) {
-                printMessage("<p><button name='deleteMessage' value='" . $row["id"] . "'>X</button>" . $row["name"] . ": " . $row["message"] . "</p>");
+                printMessage("<button class='deleteButton' name='deleteMessage' value='" . $row["id"] . "'>X</button><p>" . $row["name"] . ": " . $row["message"] . "</p>");
               }
             } else {
               printMessage("No messages found!");
