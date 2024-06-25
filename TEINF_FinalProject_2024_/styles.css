@@ -1,5 +1,9 @@
 :root {
-  --main-bg-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);
+  --main-bg-color: #4F7CAC;
+  --main-text-color: #162521;
+  --main-div-color: #c0e0de;
+  --main-selected-text-color: #3C474B;
+  --main-sec-div-color: #9EEFE5;
 }
 
 /* Allgemeine Stile */
