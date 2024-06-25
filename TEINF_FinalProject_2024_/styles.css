@@ -29,7 +29,7 @@ header {
 }
 
 h1#logo {
-  color: #333; 
+  color: var(--main-text-color); 
   font-size: 24px;
 }
 
@@ -47,11 +47,11 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--main-text-color);
 }
 
 .active a {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--main-selected-text-color);
   writing-mode: horizontal-tb;
 }
 
@@ -72,42 +72,39 @@ p {
 }
 
 /*Index Seit*/
-.index-container{
+#index-body{
   background-image: url('images/img_background.jpg');
-  background-position: center;
-  background-size: 100% 100%;
-  overflow: auto;
-  height: 1145px;
+  background-size: cover;
 }
 
-.index-container h2{
+.index-container-h2{
   text-align: center;
   font-size: 100px;
-  padding: 370px 0;
-  padding-bottom: 50px;
-  color: white;
+  color: var(--main-text-color);
+  background-color: #000000;
+  max-width: 1100px;
   text-shadow: 4px 4px #000000;
+  margin-top: 20%;
 }
 
 .index-vM{
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: var(--main-text-color);
   max-width: 300px;
-  margin: 0 auto;
-  background-color: #000000;
+  background-color: var(--main-div-color);
   border-radius: 6px;
 }
 
 #index-text{
   text-align: center;
   font-size: 35px;
-  color: white;
-  background-color: #000000;
+  color: var(--main-text-color);
+  background-color: var(--main-div-color);
   max-width: 1700px;
-  margin: 0 auto;
-  display: flex;
-  
+  border-radius: 6px;
+  margin-top: 600px;
+  margin-bottom: 100px;
 }
 
 /* Produktliste */
@@ -183,7 +180,7 @@ article.example p {
 
 .about-container {
   text-align: center;
-  background: rgb(189, 165, 165);
+  background: var(--main-div-color);
   /*background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(180,216,185,1) 50%, rgba(148,187,233,1) 100%);*/
   border-radius: 20px;
   padding: 5px;
