@@ -155,6 +155,7 @@ footer {
   margin: 0;
   padding: 0;
   padding-bottom: 0;
+  border-radius: 15px;
 }
 
 article.example {
@@ -162,7 +163,9 @@ article.example {
   width: 200px;
   height: fit-content;
   padding: 10px;
-  background-color: rgba(95, 95, 95, 10%);
+  background-color: var(--main-div-color);
+  border: solid var(--main-sec-div-color) 2px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -172,8 +175,11 @@ article.example p {
 }
 
 .grid {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-gap: .5rem;
+  align-items: flex;
+  justify-items: center;
 }
 
 /* About us */
@@ -197,7 +203,6 @@ article.example p {
   width: fit-content;
   height: fit-content;
   background: var(--main-div-color);
-  border-radius: 10px;
   justify-content: center;
 }
 
