@@ -200,6 +200,10 @@ article.example p {
   max-width: 1000px;
 }
 
+#lastAboutSec{
+  margin-bottom: calc(var(--footer-height) + 10px);
+}
+
 /*Message Box - PHP*/
 
 .message-box {
