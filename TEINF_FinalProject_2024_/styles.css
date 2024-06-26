@@ -82,7 +82,7 @@ p {
   text-align: center;
   font-size: 100px;
   color: var(--main-text-color);
-  text-shadow: 4px 4px #000000;
+  text-shadow: 4px 4px #FFFFFF;
   margin-top: 15%;
 }
 
@@ -96,6 +96,7 @@ p {
   border: solid var(--main-sec-div-color) 6px;
   margin: 0 auto;
   margin-top: 30px;
+  text-shadow: 2px 2px #FFFFFF;
 
 }
 

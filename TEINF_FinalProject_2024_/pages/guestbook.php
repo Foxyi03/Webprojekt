@@ -6,7 +6,7 @@
 </head>
 <body>
   <header>
-    <h1 id="logo">Guestbook</h1>
+    <h1 id="logo">TriviaVrai</h1>
     <nav>
     <ul>
         <li><a href="../index.html">Home</a></li>
