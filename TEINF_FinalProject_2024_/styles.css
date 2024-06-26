@@ -256,5 +256,8 @@ li:nth-child(3n+3)::marker {
 }
 
 .backButton {
-  color: transparent;
+  color: black;
+  text-decoration: none;
+  border: solid var(--main-text-color) 2px;
+  font-weight: bolder;
 }
