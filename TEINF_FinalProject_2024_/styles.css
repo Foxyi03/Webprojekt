@@ -89,9 +89,9 @@ p {
 .index-vM{
   text-align: center;
   font-size: 50px;
-  color: var(--main-text-color);
+  color: black;
   max-width: 300px;
-  background-color: var(--main-div-color);
+  background-color: var(--main-bg-color);
   border-radius: 6px;
   border: solid var(--main-sec-div-color) 6px;
   margin: 0 auto;
@@ -104,7 +104,7 @@ p {
   text-align: center;
   font-size: 35px;
   color: var(--main-text-color);
-  background-color: var(--main-div-color);
+  background-color: var(--main-bg-color);
   max-width: 1700px;
   border-radius: 6px;
   border: solid var(--main-sec-div-color) 6px;
@@ -210,11 +210,13 @@ article.example p {
   height: fit-content;
   background: var(--main-div-color);
   justify-content: center;
+  border-radius: 6px;
 }
 
 .message-box * {
   display: inline-block;
   vertical-align: middle;
+  
 }
 
 .message-box p {
