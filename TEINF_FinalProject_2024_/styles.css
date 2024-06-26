@@ -240,3 +240,19 @@ article.example p {
   min-height: 64px;
   max-height: 256px;
 }
+
+li:nth-child(3n+1)::marker {
+  color: red;
+}
+
+li:nth-child(3n+2)::marker {
+  color: lightgrey;
+}
+
+li:nth-child(3n+3)::marker {
+  color: lightblue;
+}
+
+.backButton {
+  color: transparent;
+}
